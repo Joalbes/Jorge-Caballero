@@ -4,8 +4,8 @@
 let numero = parseFloat(prompt('Digite un numero entero'));
 
 //logica
-if(!Number.isInteger(numero) || numero <=0){
-    console.log('Digite un dato que sea un numero entero y mayor que cero ');
+if(!Number.isInteger(numero) ){
+    console.log('Digite un dato que sea un numero entero');
 }else{
     residuo = numero % 2;
     if(residuo == 0){
