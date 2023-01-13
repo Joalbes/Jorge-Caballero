@@ -3,7 +3,7 @@
 El algoritmo debe imprimir cual es el numero mayor y cual es el numero menor entre los 3.
 Ademas ninguno de los 3 numeros ingresados pueden ser iguales.
 En caso de que el usuario ingrese 2 numeros iguales debe mostrar una alerta.
-*/
+*/3
 
 
 // Validadcion de datos ingresasados: Numeros enteros, mayores que cero, y diferentes entre si
