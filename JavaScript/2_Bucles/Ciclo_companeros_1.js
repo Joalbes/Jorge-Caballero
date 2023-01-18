@@ -32,9 +32,10 @@ let ancianosPulmonar = 0
 let ancianos = 0
 
 
-let numeroPersonas = 0
+let numeroPersonas = 1
 let edad
 let enfermedad
+
 do {
     edad = parseFloat(prompt('Ingrese la edad en un numero entero'))
     if (!Number.isInteger(edad) || edad < 0) {
@@ -44,100 +45,268 @@ do {
         if (!Number.isInteger(enfermedad) || enfermedad < 1 || enfermedad > 3) {
             alert('Error: Dato invalido, intente nuevamente')
         } else {
-            switch (edad) {
-                
+            switch (enfermedad) {
 
-                case (edad >= 0E):
-                    ninos++
-                    switch (enfermedad) {
-                        case 1:
-                            ninosCancer += 1
-                            console.log(ninosCancer)
+                case 1: //cancer
+                    switch (true) {
+
+                        case (edad >= 0 && edad <= 12):
+                            ninos++
+                            switch (enfermedad) {
+                                case 1:
+                                    ninosCancer += 1
+                                    console.log(ninosCancer)
+                                    break
+
+                                case 2:
+                                    ninosCorazon += 1
+                                    break
+
+                                case 3:
+                                    ninosPulmonar += 1
+                                    break
+
+
+                            }
+
+
+                        case (edad >= 13 && edad <= 19):
+                            jovenes++
+                            switch (enfermedad) {
+                                case 1:
+                                    jovenesCancer += 1
+                                    break
+
+                                case 2:
+                                    jovenesCorazon += 1
+                                    break
+
+                                case 3:
+                                    jovenesPulmonar += 1
+                                    break
+                            }
                             break
 
-                        case 2:
-                            ninosCorazon += 1
+                        case (edad >= 20 && edad <= 50):
+                            adultos++
+                            switch (enfermedad) {
+                                case 1:
+                                    adultosCancer += 1
+                                    break
+
+                                case 2:
+                                    adultosCorazon += 1
+                                    break
+
+                                case 3:
+                                    adultosPulmonar += 1
+                                    break
+                            }
                             break
 
-                        case 3:
-                            ninosPulmonar += 1
-                            break
+                        case (edad > 50):
+                            ancianos++
+                            switch (enfermedad) {
+                                case 1:
+                                    ancianosCancer += 1
+                                    break;
 
-              
+                                case 2:
+                                    ancianosCorazon += 1
+                                    break;
+
+                                case 3:
+                                    ancianosPulmonar += 1
+                                    break;
+                            }
+                            break;
+
+                        default:
+                            console.log('')
+
+
                     }
-                    
+                    break;
 
-                case (edad >= 13 && edad <= 19):
-                    jovenes++
-                    switch (enfermedad) {
-                        case 1:
-                            jovenesCancer += 1
+                case 2: //Enfermedad cardiaca
+                    switch (true) {
+
+                        case (edad >= 0 && edad <= 12):
+                            ninos++
+                            switch (enfermedad) {
+                                case 1:
+                                    ninosCancer += 1
+                                    console.log(ninosCancer)
+                                    break
+
+                                case 2:
+                                    ninosCorazon += 1
+                                    break
+
+                                case 3:
+                                    ninosPulmonar += 1
+                                    break
+
+
+                            }
+
+
+                        case (edad >= 13 && edad <= 19):
+                            jovenes++
+                            switch (enfermedad) {
+                                case 1:
+                                    jovenesCancer += 1
+                                    break
+
+                                case 2:
+                                    jovenesCorazon += 1
+                                    break
+
+                                case 3:
+                                    jovenesPulmonar += 1
+                                    break
+                            }
                             break
 
-                        case 2:
-                            jovenesCorazon += 1
+                        case (edad >= 20 && edad <= 50):
+                            adultos++
+                            switch (enfermedad) {
+                                case 1:
+                                    adultosCancer += 1
+                                    break
+
+                                case 2:
+                                    adultosCorazon += 1
+                                    break
+
+                                case 3:
+                                    adultosPulmonar += 1
+                                    break
+                            }
                             break
 
-                        case 3:
-                            jovenesPulmonar += 1
-                            break
+                        case (edad > 50):
+                            ancianos++
+                            switch (enfermedad) {
+                                case 1:
+                                    ancianosCancer += 1
+                                    break;
+
+                                case 2:
+                                    ancianosCorazon += 1
+                                    break;
+
+                                case 3:
+                                    ancianosPulmonar += 1
+                                    break;
+                            }
+                            break;
+
+                        default:
+                            console.log('')
+
+
                     }
-                    break
+                    break;
 
-                case (edad >= 20 && edad <= 50):
-                    adultos++
-                    switch (enfermedad) {
-                        case 1:
-                            adultosCancer += 1
+                case 3: //Enfermedad pulmonar
+
+                    switch (true) {
+
+                        case (edad >= 0 && edad <= 12):
+                            ninos++
+                            switch (enfermedad) {
+                                case 1:
+                                    ninosCancer += 1
+                                    console.log(ninosCancer)
+                                    break
+
+                                case 2:
+                                    ninosCorazon += 1
+                                    break
+
+                                case 3:
+                                    ninosPulmonar += 1
+                                    break
+
+
+                            }
+
+
+                        case (edad >= 13 && edad <= 19):
+                            jovenes++
+                            switch (enfermedad) {
+                                case 1:
+                                    jovenesCancer += 1
+                                    break
+
+                                case 2:
+                                    jovenesCorazon += 1
+                                    break
+
+                                case 3:
+                                    jovenesPulmonar += 1
+                                    break
+                            }
                             break
 
-                        case 2:
-                            adultosCorazon += 1
+                        case (edad >= 20 && edad <= 50):
+                            adultos++
+                            switch (enfermedad) {
+                                case 1:
+                                    adultosCancer += 1
+                                    break
+
+                                case 2:
+                                    adultosCorazon += 1
+                                    break
+
+                                case 3:
+                                    adultosPulmonar += 1
+                                    break
+                            }
                             break
 
-                        case 3:
-                            adultosPulmonar += 1
-                            break
+                        case (edad > 50):
+                            ancianos++
+                            switch (enfermedad) {
+                                case 1:
+                                    ancianosCancer += 1
+                                    break;
+
+                                case 2:
+                                    ancianosCorazon += 1
+                                    break;
+
+                                case 3:
+                                    ancianosPulmonar += 1
+                                    break;
+                            }
+                            break;
+
+                        default:
+                            console.log('')
+
+
                     }
-                    break
+                    break;
 
-                case (edad > 50):
-                    ancianos++
-                    switch (enfermedad) {
-                        case 1:
-                            ancianosCancer += 1
-                            break
-
-                        case 2:
-                            ancianosCorazon += 1
-                            break
-
-                        case 3:
-                            ancianosPulmonar += 1
-                            break
-                    }
-                    break
-
-                    default:
-                        console.log('a')
-                        console.log(edad)
-                        console.log(enfermedad)
+                default:
+                    console.log('No selecciono ninguna enfermedad')
 
             }
+
 
         }
     }
     numeroPersonas++;
 } while (numeroPersonas <= 2)
 
-console.log(ninos)
 
-console.log(ninosCorazon)
-console.log(ninosPulmonar)
-// const pcn = (ninosCancer / ninos) * 100
-// const pcorn = (ninosCorazon / ninos) * 100
-// const ppn = (ninosPulmonar/ ninos) * 100
+const pcn = (ninosCancer / ninos) * 100
+const pcorn = (ninosCorazon / ninos) * 100
+const ppn = (ninosPulmonar / ninos) * 100
 
-// console.log('El numero niños con cancer es: ',pcn, '%')
-// console.log('El numero niños con enfermedes del corazon es:',pcorn, '%')
-// console.log('El numero niños con enfermedades pulmonares es: ',ppn, '%')
+console.log('El numero niños con cancer es: ', pcn, '%');
+console.log('El numero niños con enfermedes del corazon es:', pcorn, '%');
+console.log('El numero niños con enfermedades pulmonares es: ', ppn, '%');
