@@ -20,7 +20,7 @@ let tipoMotor
 
 do{
     //Ingresando el tipo de motor
-    tipoMotor = parseFloat(prompt('Ingrese un numero de 1 a 4 de la siguiente manera:\n'
+    tipoMotor = parseFloat(prompt('Ingrese un numero de  4 de la siguiente manera:\n'
      + 'Maque " 0 " si no hay establecido un valor definido para el tipo de bomba.\n "'
      + 'Maque " 1 " si no hay establecido un valor definido para el tipo de bomba.\n "'
      + 'Maque " 2 " si no hay establecido un valor definido para el tipo de bomba.\n "'
@@ -39,6 +39,7 @@ do{
 
         case 1:
         console.log('"La bomba es una bomba de agua”');
+        break;
 
         case 2:
         console.log('“La bomba es una bomba de gasolina”');
