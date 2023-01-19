@@ -27,6 +27,8 @@ contadorJirafaTresAMas = 0
 contadorChimpanseCeroAUno = 0
 contadorChimpanseUnoATres = 0
 contadorChimpanseTresAMas = 0
+
+contadorAnimales = 1
 entrar = True
 
 #validacion de datos de entrada: El tipo de animal
@@ -34,40 +36,88 @@ while entrar:
         tipoAnimal = float(input('Ingrese el tipo de animal a estudiar, Asi:\n'
                                             + '" 1 " para Elefante. \n'
                                             + '" 2 " para Jirafa. \n'
-                                            + '" 3 " para Chimpase. \n'
-                                            + '" 0 "para salir ' ))
-
-        
-        if tipoAnimal < 0 or tipoAnimal > 3 :
-            print('Error: Dato invalido, verifique que su dato este entre 0 y 3')
+                                            + '" 3 " para Chimpase. \n'))
+        if tipoAnimal <= 0 or tipoAnimal > 3 :
+            print("Error: Tipo de dato invalido. Ingrese el un numero entero entre 0 y 3")
         else:
-            if tipoAnimal == 1:      #Se eligio Elefenates
-                numeroMuestras = 20
-            elif tipoAnimal == 2:    #Se eligio Jirafas 
-                numeroMuestras = 15
-            elif tipoAnimal == 3:    #Se eligio Chipanses
-                numeroMuestras = 40  
             entrar = False
 
-entrarWhile2 = True
+# Validacion de la edad del animal y la logica del algoritmo
+if tipoAnimal == 1: # Elefantes
+    numeroMuestras = 2 #Se cambia el numero de muestras para realizar prueba
 
-#validacion de datos de entrada: Edad del animal.
-while entrarWhile2:
-        edad = float(input('Ingrese la edad del animal, Asi:\n')                                        + '" 0 "para salir ' ))
-
-        
-        if edad < 0 :
-            print('Error: Dato invalido, verifique que la edad sea positiva')
+    for i in range(0,numeroMuestras):
+        edad = float(input("Ingrese la edad del animal: "))
+        if edad < 0:
+            print("Error: Numero invalido. Ingrese de nuevo la edad: ")
         else:
-            if edad >= 0 and edad <= 1:      #primer rango
+            if edad >= 0 and edad <= 1:
                 contadorElefanteCeroAUno += 1
-                
-            elif edad > 1 and edad < 3 :     #Segundo rango 
-                
-            elif tipoAnimal >= 3:            #Tercer rango
-                  
-    entrarWhile2 = False
+                contadorAnimales += 1
+            elif edad > 1 and edad < 3:  
+                contadorElefanteUnoATres += 1 
+                contadorAnimales += 1 
+            elif edad >= 3:
+                contadorElefanteTresAMas += 1 
+                contadorAnimales += 1
+             
 
+    contadorAnimales -=1 #Se reduce en 1 para ajustar contador a valor real y evitar la divison por cero
+            #impresionde resultados
+    print("El promedio de edad de elefantes de 0 a 1 años es de:", round(contadorElefanteCeroAUno * 100 / contadorAnimales,2),"%")
+    print("El promedio de edad de elefantes de mas de 1 año y menos de 3 años es:", round(contadorElefanteUnoATres * 100 / contadorAnimales,2),"%")
+    print("EL promedio de edad de elefantes de mas de 3 años es:", round(contadorElefanteTresAMas * 100 / contadorAnimales,2),"%")                
+    
+                
+elif tipoAnimal == 2: #Jirafa
+    numeroMuestras = 3#Se cambia el numero de muestras para realizar prueba
+
+    for i in range(0,numeroMuestras):
+        edad = float(input("Ingrese la edad del animal: "))
+        if edad < 0:
+            print("Error: Numero invalido. Ingrese de nuevo la edad: ")
+        else:
+            if edad >= 0 and edad <= 1:
+                contadorJirafaCeroAUno += 1
+                contadorAnimales += 1
+            elif edad > 1 and edad < 3:  
+                contadorJirafaUnoATres += 1 
+                contadorAnimales += 1 
+            elif edad >= 3:
+                contadorJirafaTresAMas += 1 
+                contadorAnimales += 1 
+
+    
+    contadorAnimales -=1 #Se reduce en 1 para ajustar contador a valor real y evitar la divison por cero
+           #impresionde resultados
+    print("El promedio de edad de las Jirafas de 0 a 1 años es de:", round(contadorJirafaCeroAUno * 100 / contadorAnimales,2),"%")
+    print("El promedio de edad de las Jirafas de mas de 1 año y menos de 3 años es:", round(contadorJirafaUnoATres * 100 / contadorAnimales,2),"%")
+    print("EL promedio de edad de las Jirafas de mas de 3 años es:", round(contadorJirafaTresAMas* 100 / contadorAnimales,2),"%")       
+
+elif tipoAnimal == 3: #Chimpanses
+    numeroMuestras = 4#Se cambia el numero de muestras para realizar prueba
+
+    for i in range(0,numeroMuestras):
+        edad = float(input("Ingrese la edad del animal: "))
+        if edad < 0:
+            print("Error: Numero invalido. Ingrese de nuevo la edad: ")
+        else:
+            if edad >= 0 and edad <= 1:
+                contadorChimpanseCeroAUno += 1
+                contadorAnimales += 1
+            elif edad > 1 and edad < 3:  
+                contadorChimpanseUnoATres += 1 
+                contadorAnimales += 1 
+            elif edad >= 3:
+                contadorChimpanseTresAMas += 1 
+                contadorAnimales += 1 
+
+    
+    contadorAnimales -=1 #Se reduce en 1 para ajustar contador a valor real y evitar la divison por cero
+          #impresionde resultados
+    print("EL promedio de edad de los Chipanses de 0 a 1 años es de:", round(contadorChimpanseCeroAUno * 100 / contadorAnimales,2),"%")
+    print("El promedio de edad de los Chimpanses de mas de 1 año y menos de 3 años es:", round(contadorChimpanseUnoATres * 100 / contadorAnimales,2),"%")
+    print("EL promedio de edad de los Chimpanses de mas de 3 años es:", round(contadorChimpanseTresAMas * 100 / contadorAnimales,2),"%")                
 
 
 
