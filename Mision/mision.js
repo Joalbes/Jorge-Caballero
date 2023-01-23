@@ -56,7 +56,7 @@ let notaAcumuladaDosTrabajos = 0
         do {
             nota = parseFloat(prompt('Ingrese la nota del examen' + j + ':'))
             if (nota < 0 || nota > 5) {
-                alert('Error: Numero invalido. Recuerde que el la nota debe estar entre 0 y 5.')
+                alert('Error: Numero invalido. Recuerde que el la nota debe estar entre 0 y 5.a')
             } else {
                 entrar = false
             }
@@ -74,7 +74,7 @@ let notaAcumuladaDosTrabajos = 0
         entrar = true //Entrada de la nota y validacion de la nota >= 0
         do {
             nota = parseFloat(prompt('Ingrese la nota del trabajo' + j + ':'))
-            if (nota < 0 || nota > 5) {
+            if (nota < 0 || nota > 5 ) {
                 alert('Error: Numero invalido. Recuerde que el la nota debe estar entre 0 y 5.')
             } else {
                 entrar = false
@@ -94,7 +94,7 @@ let notaAcumuladaDosTrabajos = 0
     entrar = true //Entrada de la nota y validacion de la nota >= 0
     do {
         nota = parseFloat(prompt('Ingrese la nota del examen final:'))
-        if (nota < 0 || nota > 5) {
+        if (nota < 0 || nota > 5 ) {
             alert('Error: Numero invalido. Recuerde que el la nota debe estar entre 0 y 5.')
         } else {
             entrar = false
@@ -113,7 +113,7 @@ let notaAcumuladaDosTrabajos = 0
     entrar = true //Entrada de la nota y validacion de la nota >= 0
     do {
         nota = parseFloat(prompt('Ingrese la nota de la autoevaluacion: '))
-        if (nota < 0 || nota > 5) {
+        if (nota < 0 || nota > 5 ) {
             alert('Error: Numero invalido. Recuerde que el la nota debe estar entre 0 y 5.')
         } else {
             entrar = false
@@ -128,7 +128,7 @@ let notaAcumuladaDosTrabajos = 0
     entrar = true //Entrada de la nota y validacion de la nota >= 0
     do {
         nota = parseFloat(prompt('Ingrese la nota de la coevaluacion asigmnada por el profesor: '))
-        if (nota < 0 || nota > 5) {
+        if (nota < 0 || nota > 5 ) {
             alert('Error: Numero invalido. Recuerde que el la nota debe estar entre 0 y 5.')
         } else {
             entrar = false
