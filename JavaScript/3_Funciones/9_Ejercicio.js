@@ -15,7 +15,26 @@ let comisionSemana = 0;
 let comisionAcumulada = 0;
 let salir = true;
 
-//Definiendo funciones
+//***********************************Definiendo funciones*********************************//
+
+//Validacion dato salario
+function validacionSalario(salario) {
+    if(salario <= 0){
+        alert('Error: El salario base debe ser mayor que cero.')
+    }else{
+        salir = false;
+    }
+}
+
+//validacion numero de vendedores.
+function validacionNumeroVendedores(numeroVendedores) {
+    if(numeroVendedores <= 0 || !Number.isInteger(numeroVendedores)){
+        alert('Error: El numero de vendedores debe ser mayor que cero.');
+    }else{
+        salir = false;
+    }
+}
+
 
 //Funcion comision
  function comision (ventas){
@@ -27,20 +46,27 @@ function salarioSemanal(salario,comisionAcumulada){
     return salario + comisionAcumulada;
 }
 
-do{
+//*********************************Logica *******************************************************//
+
+do{//Ingreso del salario del vendedor
+
     salario = parseFloat(prompt('Ingrese el salario base de los vendedores'));
-    if(salario <= 0){
-        alert('Error: El salario base debe ser mayor que cero.')
-    }else{
-        salir = false;
-    }
+    validacionSalario(salario);
+    
 }while(salir)
 
-do{
+
+do{//Ingreso del numero de vendedores
+
     numeroVendedores = parseFloat(prompt('Ingrese el numero de vendedores: '));
-    if(!Number.isInteger(numeroVendedores) || numeroVendedores < 1){
-        alert('Error: Ingrese un numero valido de vendedores');
-    }else{
+    validacionNumeroVendedores(numeroVendedores);
+    
+}while(salir)
+
+
+
+do{
+    
         for(var j = 1; j <= numeroVendedores; j++){
             for(var k = 1; k <= 4; k++){
                 ventas = parseFloat(prompt('Ingrese el valor de las tres ventas semana ' + k  + ' del vendedor ' + j))
@@ -60,7 +86,7 @@ do{
             
 
         }
-    }
+    
 
     i++;
     console.log('Valor de variable bandera: ' + i);
