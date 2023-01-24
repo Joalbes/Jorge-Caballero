@@ -11,22 +11,15 @@ let contadorPersonasConRegalo = 0;
 let contadorPersonasConBonoParaCompra = 0;
 let contadorWhile = 1;
 
-//validacion de numero si es entero y esta en un intervalo
-function validacionEntero(datoAEvaluar, limiteInferior, limiteSuperior){
 
-}
+//validacion de numero, y que clasifica segun tipo de reagalo
+function validacionEntero(datoAEvaluar, limiteInferior, limiteSuperior) {
 
-do{
-    tipoRegalo = parseFloat(prompt('Selecione el numero entre 1 y 3 dependiendo del tipo de regalo, asi: \n'
-                 + '" 1 " Sobre con dinero \n'
-                 + '" 2 " Regalo \n'
-                 + '" 3 " Bono almacen Casa Bonita \n'
-                 + '" 4 " Olvido el regalo. \n'));
 
-    if(!Number.isInteger(tipoRegalo) || tipoRegalo < 1 || tipoRegalo > 4){
-        alert('Error: Numero no valido, Ingrese un número entero entre 1 y 4');
+    if (datoAEvaluar < limiteInferior || datoAEvaluar > limiteSuperior || !Number.isInteger(datoAEvaluar)) {
+        alert('Error: Dato no valido. Ingrese un numero entre', limiteInferior, 'y', limiteSuperior, 'y ademas que sea entero.')
         contadorWhile--;
-    } else{
+    } else {
         
         switch (tipoRegalo) {
 
@@ -55,10 +48,20 @@ do{
 
                 
         }
+       
+    }
+
+}
 
 
-    }            
-                             
+do{
+    tipoRegalo = parseFloat(prompt('Selecione el numero entre 1 y 3 dependiendo del tipo de regalo, asi: \n'
+                 + '" 1 " Sobre con dinero \n'
+                 + '" 2 " Regalo \n'
+                 + '" 3 " Bono almacen Casa Bonita \n'
+                 + '" 4 " Olvido el regalo. \n'));
+
+    validacionEntero(tipoRegalo,0,4)             
 
     contadorWhile++;
 
