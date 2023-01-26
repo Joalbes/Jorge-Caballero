@@ -34,39 +34,39 @@ for (var i = 0; i < numeroPersonas; i++) {
     ));
 
     switch (opcionMenu) {
-       
+
         case 1:
-            platosArroz++;   
-            platos++;         
+            platosArroz++;
+            platos++;
             break;
 
         case 2:
-            platosPastas++; 
-            platos++;            
+            platosPastas++;
+            platos++;
             break;
 
         case 3:
-            platosMute++; 
-            platos++;            
-            break; 
+            platosMute++;
+            platos++;
+            break;
 
         case 4:
             platosPescado++;
-            platos++;             
-            break; 
+            platos++;
+            break;
 
         case 5:
             platosSobrebarriga++;
-            platos++;             
-            break;     
-    
+            platos++;
+            break;
+
         default:
             console.log('Error:Este plato no esta en el menu, vuelva a realizar el pedido');
             i++;
             break;
     }
 
-       
+
 
 
 }
@@ -79,15 +79,25 @@ ObjDatosFactura.pescado = platosPescado;
 ObjDatosFactura.sobrebarriga = platosSobrebarriga;
 
 //calculando el pago total
-pagoTotal = 15000*platosArroz + 20000*platosPastas + 12000*platosMute + 17000*platosPescado + 25000*platosSobrebarriga
+pagoTotal = 15000 * platosArroz + 20000 * platosPastas + 12000 * platosMute + 17000 * platosPescado + 25000 * platosSobrebarriga
 
 //Imprimiendo la factura
-console.log(`Factura:\n
-            ${platosArroz} Platos de Arroz con Pollo valen:$ ${15000 * platosArroz}
-            ${platosPastas} Platos de Pastas valen:$ ${20000 * platosPastas}
-            ${platosMute} Platos de Mute valen:$ ${12000 * platosMute}
-            ${platosPescado} Platos de Pescado Frito valen:$ ${17000 * platosPescado}
-            ${platosSobrebarriga} Platos de Sobrebarriga valen:$ ${25000 * platosSobrebarriga}
-            Total de platos: ${platos} 
-            Valor a pagar  : ${pagoTotal}            
-            `)
+
+console.log(`Factura:\n`);
+if (platosArroz != 0){
+    console.log(`${platosArroz} Platos de Arroz con Pollo valen:$ ${15000 * platosArroz}`);
+} 
+if(platosPastas != 0){
+    console.log(`${platosPastas} Platos de Pastas valen:$ ${20000 * platosPastas}`);
+}
+if(platosMute != 0){
+    console.log(`${platosMute} Platos de Mute valen:$ ${12000 * platosMute}`);
+} 
+if(platosPescado != 0){
+    console.log(`${platosPescado} Platos de Pescado Frito valen:$ ${17000 * platosPescado}`);
+} 
+if(platosSobrebarriga != 0){
+    console.log(`${platosSobrebarriga} Platos de Sobrebarriga valen:$ ${25000 * platosSobrebarriga}`);
+}
+console.log(`Total de platos: ${platos}`);
+console.log(`Valor a pagar  : ${pagoTotal}`);
