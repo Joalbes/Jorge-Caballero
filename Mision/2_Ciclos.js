@@ -111,7 +111,7 @@ while (entrar) {
                     alert('Error: El numero de telefonos vendidos no puede ser mayor al inventario. Volvera al menu principal')
                 } else {
                     inventarioSamsung -= telefonosSamsungVendidos;
-                    telefonosVendidos++;
+                    telefonosVendidos += telefonosSamsungVendidos;
                 }
 
             }
@@ -126,7 +126,7 @@ while (entrar) {
                     alert('Error: El numero de telefonos vendidos no puede ser mayor al inventario. Volvera al menu principal')
                 } else {
                     inventarioIphone -= telefonosIphoneVendidos;
-                    telefonosVendidos++;
+                    telefonosVendidos += telefonosIphoneVendidos;
                 }                
             }
             break;
@@ -141,7 +141,7 @@ while (entrar) {
                     alert('Error: El numero de telefonos vendidos no puede ser mayor al inventario. Volvera al menu principal')
                 } else {
                     inventarioXiami -= telefonosXiaomiVendidos;
-                    telefonosVendidos++;
+                    telefonosVendidos += telefonosXiaomiVendidos
                 }
             }
             break;
@@ -155,7 +155,7 @@ while (entrar) {
                     alert('Error: El numero de telefonos vendidos no puede ser mayor al inventario. Volvera al menu principal')
                 } else {
                     inventarioMotorola -= telefonosMotorolaVendidos;
-                    telefonosVendidos++;
+                    telefonosVendidos += telefonosMotorolaVendidos;
                 }
             }
             break;
@@ -169,7 +169,7 @@ while (entrar) {
                     alert('Error: El numero de telefonos vendidos no puede ser mayor al inventario. Volvera al menu principal')
                 } else {
                     inventarioHuawei -= telefonosHuaweiVendidos;
-                    telefonosVendidos++;
+                    telefonosVendidos += telefonosHuaweiVendidos;
                 }
             }
             break;
@@ -183,7 +183,7 @@ while (entrar) {
                     alert('Error: El numero de telefonos vendidos no puede ser mayor al inventario. Volvera al menu principal')
                 } else {
                     inventarioOppo -= telefonosOppoVendidos;
-                    telefonosVendidos++;
+                    telefonosVendidos += telefonosOppoVendidos;
                 }
             }
             break;
@@ -204,7 +204,7 @@ while (entrar) {
 
 //******************Impresion de la informacion de salidad */
 //Inventario Actualizado
-console.log(`Inventario:`
+console.log(`Inventario Actualizado:`
     + `\n1. Samsung: ${inventarioSamsung} telefonos.`
     + `\n2. Iphone: ${inventarioIphone} telefonos.`
     + `\n3. Xiomi: ${inventarioXiami} telefonos.`
