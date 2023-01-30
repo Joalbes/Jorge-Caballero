@@ -55,33 +55,31 @@ for (let index = 0; index < numeroEmpleados; index++) {
 
 //Imprimiendo el inventario cuyo nombre tenga la letra e
 console.log('\nImprimiendo el inventario cuyo nombre tenga la letra e:');
-inventarioA.forEach(element => {  
-        password = element.contrasena
-        password = password.replaceAll('a','X');
-        password = password.replaceAll('e','X');
+inventarioA.forEach(element => { 
     
     console.log(`\nEl nombre es: ${element.nombre}`);
     console.log(`EL usuario es: ${element.usuario}`);
-    console.log(`La contraseña es: ${password} `);
+    console.log(`La contraseña es: ${element.contrasena} `);
 });
 
 
 //Imprimiendo el inventario cuyo usuario tenga la letra J
 console.log('\nImprimiendo el inventario cuyo usuario tenga la letra J:');
 inventarioB.forEach(element => {  
-        password = element.contrasena
-        password = password.replaceAll('a','X');
-        password = password.replaceAll('e','X');
-    
+            
     console.log(`\nEl nombre es: ${element.nombre}`);
     console.log(`EL usuario es: ${element.usuario}`);
-    console.log(`La contraseña es: ${password} `);
+    console.log(`La contraseña es: ${element.contrasena} `);
 });
 
 //Imprimiendo el inventario
 console.log('\nImprimiendo todo el inventario:');
 inventario.forEach(element => {    
+    password = element.contrasena
+    password = password.replaceAll('a','X');
+    password = password.replaceAll('e','X');
+
     console.log(`\nEl nombre es: ${element.nombre}`);
     console.log(`EL usuario es: ${element.usuario}`);
-    console.log(`La contraseña es: ${element.contrasena} `);
+    console.log(`La contraseña es: ${password} `);
 });
