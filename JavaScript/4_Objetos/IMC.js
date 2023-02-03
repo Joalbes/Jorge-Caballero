@@ -7,8 +7,8 @@ let numeroFamiliares;
 let parentesco;
 let altura;
 let peso;
-let datos = {};
-let familiares = [];
+let datos = new Object();
+let familiares = new Array();
 
 //var de proceso
 let entrar = true;
@@ -64,6 +64,8 @@ while (entrar) {
 
   switch (opcionMenu) {
 
+    
+
     case "1": // INgresando numero de familiares
         numeroFamiliares = parseFloat(prompt("Ingrese el numero de familiares que desea registrar:"));
 
@@ -78,7 +80,6 @@ while (entrar) {
     case "2":
         if(banderaNumeroFamiliares){
             for (let i = 0; i < numeroFamiliares; i++) {
-
                 datos.nombre = prompt(`Ingrese el nombre del familiar ${i+1} :`);
                 datos.nombre = hayString(datos.nombre,'nombre');
                 entrarC = true;
@@ -118,14 +119,15 @@ while (entrar) {
                 }
 
                 //Agregando el objeto al vector
-                familiares.push(datos);            
+               familiares[i] = datos; 
+               datos = {};           
+                
                 
             }
             banderaMostarDatos = true;
-
+            
         }else{
             alert('Error: No ha ingresado el número de familiares, por favor ingreselos primero');
-
             banderaDatosIngresados = false;
         }       
 
@@ -141,6 +143,7 @@ while (entrar) {
                 alert('Error: No ha ingresasdo los datos de los familiares. Vaya a la opción 2 del menu');
                 
             } else {
+                console.log(familiares);
                 familiares.forEach(el =>{
                              console.log(`\nNombre: ${el.nombre}.\nParentesco: ${el.parentesco}.\nAltura: ${el.altura}.\nPeso: ${el.peso}.\nImc: ${el.imc}.\nMensaje: ${el.mensaje}.`);;
                          }); 
