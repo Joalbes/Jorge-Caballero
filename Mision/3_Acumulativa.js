@@ -8,16 +8,7 @@ let nivel;
 let nota;
 let opcionMenu;
 let estudiantes = new Array();
-let alumno = {
-  nombre: "",
-  codigo: "",
-  nivel: "",
-  nota1: 0,
-  nota2: 0,
-  nota3: 3,
-  promedio: 0,
-  aprobo: "",
-};
+let alumno = {};
 let cod;
 //variables de proceso
 let entrarMenu = true;
