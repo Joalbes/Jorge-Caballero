@@ -88,7 +88,7 @@ function menuNivel(numero) {
 //Nota Valida
 function notaValida(nota) {
   while (entrarNotaValida) {
-    if (nota < 0 || isNaN(nota)) {
+    if (nota < 0 || nota > 5 || isNaN(nota)) {
       alert("Error: Numero no valido.Intente de nuevo.");
       nota = parseFloat(prompt("Ingrese una nota valida."));
     } else {
