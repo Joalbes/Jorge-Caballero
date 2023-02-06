@@ -53,6 +53,26 @@ const coex = {
 
 console.log(coex);
 
+// Imprimir nombre de los empleados
+const { nombre } = coex.empleados;
+coex.empleados.forEach((element) => {
+  console.log(`Nombre: ${element.nombre}`);
+});
+
+//En un solo string imprimir la direccion completa de cada empleado.
+let dir
+const { direccion } = coex.empleados;
+coex.empleados.forEach((element) => {
+  if (element.direccion !== String) {
+    if (element.direccion.carrera) {
+    } else {
+    }
+  } else {
+    console.log(`Direccion: ${element.direccion}`);
+  }
+});
+
+//***************************************************************************************************************************//
 //   //Imprimir el nombre de los empleados:
 //   console.log('1.Estos son los colaboradores de Coex:');
 
@@ -76,13 +96,13 @@ console.log(coex);
 //     console.log(`EL hobby de ${ primerUltimo.pop().nombre} es:  ${ primerUltimo.pop().hobbies}`);
 
 //Imprimir el nombre y la edad de los 3 ultimos empleados:
-console.log("\n4.Imprimir el nombre y la edad de los 3 ultimos empleados:");
-ultimosTres = coex.empleados.slice(2);
-console.log(coex.empleados);
+// console.log("\n4.Imprimir el nombre y la edad de los 3 ultimos empleados:");
+// ultimosTres = coex.empleados.slice(2);
+// console.log(coex.empleados);
 
-ultimosTres.forEach((element) => {
-  console.log(`Nombre: ${element.nombre} tiene ${element.edad} años`);
-});
+// ultimosTres.forEach((element) => {
+//   console.log(`Nombre: ${element.nombre} tiene ${element.edad} años`);
+// });
 
 //   //Imprimir el nombre y el primer telefono de todos los empleados.
 //   console.log(`\n5 Nombre y primer telefono de todos los empleados`)
