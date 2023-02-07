@@ -47,18 +47,12 @@ function validacionEntero(dato, tipoDato) {
 
 //Valida que no exista un codigo igual.
 function validacionCodigoDiferente(arreglo, cod) {
-    k = 0;
-    while (k < arreglo.length) {
-        if (arreglo[k].codigo == cod) {
-            alert(`Error: El codigo ${cod} esta repetido`);
-            cod = prompt('Ingrese un nuevo codigo'); 
-            k = 0;                       
-        } else{
-            k++ ;
-
-        } 
-             
-    }   
+    arreglo.forEach(el =>{
+        if (el.include(cod)) {
+            alert('Error: Codigo invalido');
+            cod = prompt('Ingrese un codigo valido');            
+        }
+    });
     return cod;
 }
 

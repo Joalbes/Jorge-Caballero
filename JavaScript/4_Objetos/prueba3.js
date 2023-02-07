@@ -8,7 +8,7 @@ let nivel;
 let nota;
 let opcionMenu;
 let estudiantes = new Array();
-let alumno = {};
+let alumno = { nombre: "", codigo: "", nivel: "", nota1: 0, nota2: 0, nota3: 3, promedio: 0, aprobo: "" }
 
 //variables de proceso
 let entrarMenu = true;
@@ -47,19 +47,23 @@ function validacionEntero(dato, tipoDato) {
 
 //Valida que no exista un codigo igual.
 function validacionCodigoDiferente(arreglo, cod) {
-    k = 0;
-    while (k < arreglo.length) {
-        if (arreglo[k].codigo == cod) {
-            alert(`Error: El codigo ${cod} esta repetido`);
-            cod = prompt('Ingrese un nuevo codigo'); 
-            k = 0;                       
-        } else{
-            k++ ;
+    let k = 0;
+    do {
+        if (arreglo[k].codigo.includes(cod)) {
+            alert('Error: Codigo Repetido');
+            cod = prompt('Ingrese un codigo nuevo');
+            k--;
+            
+        } else {
+            entrarValidacionCodigo = false;
+            return cod;
+            
+        }
+        k++;
+        
+    } while (entrarValidacionCodigo);
+    
 
-        } 
-             
-    }   
-    return cod;
 }
 
 //Funcion Menu nivel
@@ -94,7 +98,7 @@ function menuNivel(numero){
 //Nota Valida
 function notaValida(nota) {
     while (entrarNotaValida) {
-        if(nota < 0 || nota > 5 ||  isNaN(nota)){
+        if(nota < 0 || isNaN(nota)){
             alert('Error: Numero no valido.Intente de nuevo.')
             nota = parseFloat(prompt('Ingrese una nota valida.'))
         }else{
@@ -133,8 +137,8 @@ while (entrarMenu) {
                     alumno.nombre = prompt(`Ingrese el nombre del estudiante ${i + 1}:`);
 
                     alumno.codigo = prompt(`Ingrese el codigo de ${i + 1}:`);
-                    alumno.codigo = validacionCodigoDiferente(estudiantes,alumno.codigo);
-                    entrarValidacionCodigo = true;
+                    //alumno.codigo = validacionCodigoDiferente(estudiantes,alumno.codigo);
+                    //entrarValidacionCodigo = true;
 
                     alumno.nivel = prompt(`Ingrese el nivel segun la experiencia:\n1. Beginner.\n2. Junior.\n3. Senior. `);
                     alumno.nivel= menuNivel(alumno.nivel);
