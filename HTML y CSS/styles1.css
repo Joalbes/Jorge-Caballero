@@ -1,0 +1,33 @@
+header{
+    background-color: rgb(222, 248, 248);
+    border: snow cornflowerblue;    
+    border-radius: 5px;
+       
+}
+
+#clientes{
+    text-align: center;
+    color: blue;
+}
+
+
+ 
+
+.flex-container{
+    border: 1px solid black;
+    background: rgb(222, 248, 248);
+    padding: 1px;
+    display: flex;
+
+}
+
+.caja{
+    border: 1px solid black;
+    padding: 5%;
+}
+
+#buttom{
+    align:left;
+}
+
+
