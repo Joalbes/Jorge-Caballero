@@ -29,18 +29,22 @@ margin: 5px;
 .c1{
     background: lightblue;
     order: 3;
-    flex-grow: 5;
-    flex-basis: 50%;
+    width: 100px;
+    height: 100px;
 }
 
 .c2{
     background: lightcoral;
     order: 2;
-    flex-grow: 3;
+    width: 100px;
+    height: 100px;
 }
 
 .c3{
     background: lightgreen;
-    order: 1;
-    flex-grow: 1;
+    order: 1
+    width: 100px;
+    height: 100px;
+    
+    
 }

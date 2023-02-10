@@ -1,0 +1,24 @@
+.content-flex{   
+    width: 500px;
+    border: 1px solid black;
+    background-color: azure;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+div{
+    border: 1px solid black;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
