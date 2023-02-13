@@ -1,0 +1,39 @@
+.header{
+    height: max-content;
+    background-color: black;
+    color: yellow;
+    padding: 30px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.sidebar{
+    padding: 5px;
+    width: 20%;
+    background-color: rgb(106, 105, 105);
+    color: blue;
+    font-size: x-large;
+}
+
+.main{
+    padding: 5px;
+    width: 80%;
+    background-color: rgb(253, 253, 253);
+    
+}
+
+.footer{
+    padding: 5px;
+    background-color: rgb(174, 170, 170);
+    text-align: center;
+}
+
+h2{
+    color: blue;
+}
+
+body{
+    size: 100%;
+}
