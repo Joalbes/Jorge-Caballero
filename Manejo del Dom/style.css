@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    cursor: pointer;
+}
+
+.titulo{
+    height: max-content;
+    background-color: black;
+    color: yellow;
+    padding: 30px;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.lista{
+    padding: 5px;
+    width: 20%;
+    background-color: rgb(106, 105, 105);
+    color: blue;
+    font-size: x-large;
+    list-style: disc;
+
+}
+
+.contenido{
+    padding: 5px;
+    width: 80%;
+    background-color: rgb(253, 253, 253);
+}
+img{
+    
+    width: 300px;
+    height: 250px;
+}
