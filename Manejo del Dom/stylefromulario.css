@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.contenedor{
+    background-color: gray;
+    margin: 40px;
+    padding: 20px;
+    
+}
+
+#guardar{
+    background-color: brown;
+    
+
+}
