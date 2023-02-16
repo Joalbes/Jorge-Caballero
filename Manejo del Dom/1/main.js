@@ -18,7 +18,6 @@ bebidas.addEventListener('click',fBebidas);
 
 //funciones
 function fEntradas(){
-    console.log('entradas');
     content.innerHTML=`<h2>Entradas</h2>
     <p>La arepa de afrecho y zanahoria es una variación más saludable de la arepa tradicional. La idea de este
         tipo de arepa es sustituir un poco de harina de maíz por ingredientes con más fibra, como la zanahoria y
@@ -29,7 +28,6 @@ function fEntradas(){
 }
 
 function fPlatosFuertes(){
-    console.log('Platos FUertes');
     content.innerHTML=`
     <h2>Platos Fuertes</h2>
     <p>Esta es una receta fácil para preparar un delicioso tiradito de salmón con maracuyá. El tiradito es un
@@ -42,7 +40,6 @@ function fPlatosFuertes(){
 }
 
 function fEnsaladas(){
-    console.log('Ensaladas');
     content.innerHTML=`
     <h2>Ensaladas</h2>
     <p>El ceviche de palmito es un clásico ceviche ecuatoriano, esta receta es popular en la Sierra ecuatoriana.
@@ -57,7 +54,6 @@ function fEnsaladas(){
 }
 
 function fPostres(){
-    console.log('Postres');
     content.innerHTML=`<h2>Postres</h2>
     <p>Corta el hojaldre en cubos, en un cubo de base, rellénalo con Arequipe Alquería frío y pon el otro encima
         y cierra los bordes con un tenedor.
@@ -67,7 +63,6 @@ function fPostres(){
 }
 
 function fBebidas(){
-    console.log('Bebidas');
     content.innerHTML=`
     <h2>Bebidas</h2>
         <p>M Añade al vaso de la licuadora la LECHE CONDENSADA LA LECHERA® ligth, el zumo de limón, el agua, el

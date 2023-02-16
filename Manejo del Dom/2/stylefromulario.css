@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(175, 212, 175);
+    display: flex;
+    justify-content: start;
+}
+
+.contenedor{
+    background-color:white;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 7px;
+    height: 350px;
+    
+}
+
+.contenedorgrid{
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    display: grid;
+    grid-area: repeat(4,25%);
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    height: 250px;
+    width: 350px;
+
+}
+
