@@ -19,6 +19,9 @@ div{
     border: 2px solid blue;
     background-color: lightblue;
     border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -27,8 +30,7 @@ div:hover{
 }
 
 .marca{
-    color:black;
+    color:rgb(236, 34, 34);
     font-size: 80px;
-    text-align: center;
     padding: 0;
 }

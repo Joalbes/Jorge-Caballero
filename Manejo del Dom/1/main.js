@@ -18,7 +18,7 @@ bebidas.addEventListener('click',fBebidas);
 
 //funciones
 function fEntradas(){
-    content.innerHTML=`<h2>Entradas</h2>
+    contenido.innerHTML=`<h2>Entradas</h2>
     <p>La arepa de afrecho y zanahoria es una variación más saludable de la arepa tradicional. La idea de este
         tipo de arepa es sustituir un poco de harina de maíz por ingredientes con más fibra, como la zanahoria y
         el afrecho..</p>
@@ -28,7 +28,7 @@ function fEntradas(){
 }
 
 function fPlatosFuertes(){
-    content.innerHTML=`
+    contenido.innerHTML=`
     <h2>Platos Fuertes</h2>
     <p>Esta es una receta fácil para preparar un delicioso tiradito de salmón con maracuyá. El tiradito es un
         plato típico peruano que consiste en laminas finas de pescado crudo (tipo sashimi) cubierto con una
@@ -40,7 +40,7 @@ function fPlatosFuertes(){
 }
 
 function fEnsaladas(){
-    content.innerHTML=`
+    contenido.innerHTML=`
     <h2>Ensaladas</h2>
     <p>El ceviche de palmito es un clásico ceviche ecuatoriano, esta receta es popular en la Sierra ecuatoriana.
         Este ceviche vegano es super fácil de preparar. Lo más importante, aparte de usar ingredientes frescos y
@@ -54,7 +54,7 @@ function fEnsaladas(){
 }
 
 function fPostres(){
-    content.innerHTML=`<h2>Postres</h2>
+    contenido.innerHTML=`<h2>Postres</h2>
     <p>Corta el hojaldre en cubos, en un cubo de base, rellénalo con Arequipe Alquería frío y pon el otro encima
         y cierra los bordes con un tenedor.
     </p>
@@ -63,7 +63,7 @@ function fPostres(){
 }
 
 function fBebidas(){
-    content.innerHTML=`
+    contenido.innerHTML=`
     <h2>Bebidas</h2>
         <p>M Añade al vaso de la licuadora la LECHE CONDENSADA LA LECHERA® ligth, el zumo de limón, el agua, el
             hielo, las hojas de hierbabuena y licua a velocidad alta hasta que la hierbabuena quede totalmente
