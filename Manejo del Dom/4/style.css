@@ -1,0 +1,36 @@
+
+*{
+    padding: 0px;
+    margin: opx;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightcyan;
+    width: 650px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    background-color: lightblue;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div:hover{
+    background-color: lightcoral;
+}
+
+.marca{
+    color:rgb(236, 34, 34);
+    font-size: 80px;
+    padding: 0;
+}

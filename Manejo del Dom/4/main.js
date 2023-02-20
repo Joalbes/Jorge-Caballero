@@ -220,15 +220,14 @@ function validacion() {
     matriz[0][0] != 0
   ) {
     terminartJuego = true;
-    if (matriz[0][0] == 1) {
-      mensaje.innerHTML = `<p>Ganó "X" </p>`;
+    variable = matriz[0][0];
+    if (variable == 1) {
       
     } else {
-      mensaje.innerHTML = `<p>Ganó "O" </p>`;
       
     }
     
-    
+    mensaje.innerHTML = `<p>Ganó ${variable}</p>`;
   }
 
   if ( // valida 2da fila
@@ -237,13 +236,7 @@ function validacion() {
     matriz[1][0] != 0
   ) {
     terminartJuego = true;
-    if (matriz[1][0] == 1) {
-      mensaje.innerHTML = `<p>Ganó "X" </p>`;
-      
-    } else {
-      mensaje.innerHTML = `<p>Ganó "O" </p>`;
-      
-    }
+    mensaje.innerHTML = `<p>Ganó ${matriz[1][0]}</p>`;
   }
 
   if ( // tercera fila
@@ -252,13 +245,7 @@ function validacion() {
     matriz[2][0] != 0
   ) {
     terminartJuego = true;
-    if (matriz[2][0] == 1) {
-      mensaje.innerHTML = `<p>Ganó "X" </p>`;
-      
-    } else {
-      mensaje.innerHTML = `<p>Ganó "O" </p>`;
-      
-    }
+    mensaje.innerHTML = `<p>Ganó ${matriz[2][0]}</p>`;
   }
 
   if (//primera columna
@@ -267,13 +254,7 @@ function validacion() {
     matriz[0][0] != 0
   ) {
     terminartJuego = true;
-    if (matriz[0][0] == 1) {
-      mensaje.innerHTML = `<p>Ganó "X" </p>`;
-      
-    } else {
-      mensaje.innerHTML = `<p>Ganó "O" </p>`;
-      
-    }
+    mensaje.innerHTML = `<p>Ganó ${matriz[0][0]}</p>`;
   }
 
   if (//2da columna
@@ -282,13 +263,7 @@ function validacion() {
     matriz[0][1] != 0
   ) {
     terminartJuego = true;
-    if (matriz[0][1] == 1) {
-      mensaje.innerHTML = `<p>Ganó "X" </p>`;
-      
-    } else {
-      mensaje.innerHTML = `<p>Ganó "O" </p>`;
-      
-    }
+    mensaje.innerHTML = `<p>Ganó${matriz[0][1]}</p>`;
   }
 
   if (//3ra columna
@@ -297,13 +272,7 @@ function validacion() {
     matriz[0][2] != 0
   ) {
     terminartJuego = true;
-    if (matriz[0][2] == 1) {
-      mensaje.innerHTML = `<p>Ganó "X" </p>`;
-      
-    } else {
-      mensaje.innerHTML = `<p>Ganó "O" </p>`;
-      
-    }
+    mensaje.innerHTML = `<p>Ganó${matriz[0][2]}</p>`;
   }
 
   if (//diagonal
@@ -312,6 +281,7 @@ function validacion() {
     matriz[0][0] != 0
   ) {
     terminartJuego = true;
+    mensaje.innerHTML = `<p>Ganó ${matriz[0][0]}</p>`;
   }
 }
 
