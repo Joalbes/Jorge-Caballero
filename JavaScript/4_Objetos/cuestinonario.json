@@ -1,0 +1,44 @@
+{
+    "cuestinario": [
+        {
+            "pregunta": "¿Cual es la capital de Australia?",
+            "respuesta1": "Bogota",
+            "respuesta2": "Sídney",
+            "respuesta3": "New York",
+            "respuesta4": "Canberra",
+            "respuestaCorrecta": "Canberra"
+        },
+        {
+            "pregunta": "¿Cual es la fuerza necesaria para levantar una masa de 100kg en la Luna?",
+            "respuesta1": "980_N",
+            "respuesta2": "162_N",
+            "respuesta3": "372.1N",
+            "respuesta4": "2479_N",
+            "respuestaCorrecta": "162_N"
+        },
+        {
+            "pregunta": "¿Quién es el actual campeón de clavadas de la NBA All Star?",
+            "respuesta1": "Jason Tatum",
+            "respuesta2": "Mac MaClung",
+            "respuesta3": "Lebron James",
+            "respuesta4": "Kevin Durán",
+            "respuestaCorrecta": "Mac MaClung"
+        },
+        {
+            "pregunta": "¿Quién es el actual campeón de la Campions League?",
+            "respuesta1": "Real Madrid",
+            "respuesta2": "Barcelona",
+            "respuesta3": "Bayern de Múnich",
+            "respuesta4": "PSG",
+            "respuestaCorrecta": "Real Madrid"
+        },
+        {
+            "pregunta": "¿Quién es el actual campeón de la Formula Uno?",
+            "respuesta1": "Charles Lecler",
+            "respuesta2": "Lewis Hamilton",
+            "respuesta3": "Fernado Alonso",
+            "respuesta4": "Max Verstapen",
+            "respuestaCorrecta": "Max Verstapen"
+        }
+    ]
+}

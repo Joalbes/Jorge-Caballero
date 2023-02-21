@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div id="ubicacion00"></div>
-    <div id="ubicacion01"></div>
-    <div id="ubicacion02"></div>
-    <div id="ubicacion10"></div>
-    <div id="ubicacion11"></div>
-    <div id="ubicacion12"></div>
-    <div id="ubicacion20"></div>
-    <div id="ubicacion21"></div>
-    <div id="ubicacion22"></div>
-    
-    <button id="reset">Reset</button>
-    <div id="resultado"></div>
+    <title>Game 1</title>
+</head>
+<body class="dispbg-green-300 place-content-center text-center m-1 cursor-pointer" >
+
+    <div id="cajaprincipal" class=" h-1500px  m-10 p-2 rounded-lg bg-red-200">
+        <div id="pregunta1" class=" bg-white m-4 text-2xl">
+            <p>Pregunta 1</p>
+        </div>
+        <div id="respuestas1" class="m-4 bg-cyan-300 text-lg w-[200px] h-[200px]" >
+            <p class="hover:bg-orange-200">Respuesta1</p>
+            <p class="hover:bg-orange-200">Respuesta2</p>
+            <p class="hover:bg-orange-200">Respuesta3</p>
+            <p class="hover:bg-orange-200">Respuesta4</p>
+        </div>
+
+    </div>
+    <div class="text-start">
+        <div id="resultado" class="text-2xl">Aprobó</div>
+        <button id="siguiente" class="rounded-md ring-black bg-green-500 text-2xl">Siguiente</button>
+    </div>
+   
     
 </body>
-<script src="./main.js"></script>
 </html>
