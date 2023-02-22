@@ -13,6 +13,7 @@ function fguardar() {
     const edad = document.querySelector('#edad').value;
     const fecha = document.querySelector('#fechanacimiento').value;
     const salario = document.querySelector('#salario').value;
+    console.log(nombre);
     
     area1.innerHTML += `
         <div class="card">
