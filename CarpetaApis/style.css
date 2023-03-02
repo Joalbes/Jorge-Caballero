@@ -16,6 +16,7 @@ body{
 }
 
 section{
+    margin: 40px;
     background-color: rgb(247, 16, 243);
     padding: 30px;
     border-radius: 12px;
