@@ -11,34 +11,37 @@
 
 <body>
     <main class=" h-screen">
-        <section id="contenedor1" class="py-[2rem] px-[10rem] bg-[#74C69D] text-white flex flex-col p-[10px] my-[3rem]">
-            <header id="header" class=" flex flex-row   justify-between w-screen h-[10%]">
+        <section id="contenedor1" class="sm:py-[2rem] sm:px-[10rem] bg-[#74C69D] text-white flex flex-col sm:p-[10px] sm:my-[3rem]">
+            <header id="header" class=" p-[1rem] flex flex-row  justify-between w-screen sm:h-[10%]">
                 <div class="flex">
-                    <figure>
-                        <img src="./assets/logo.svg" alt="logo de la pagina">
+                    <figure class="w-[30%]">
+                        <img src="./assets/logo.svg" alt="logo de la pagina" >
                     </figure>
                     <p class="text-3xl ml-[10px]">Start</p>
                 </div>
-                <nav class="flex flex-row mr-[15rem]">
-                    <p class="mx-[1rem]">Home</p>
-                    <p class="mx-[1rem]">portafolio</p>
-                    <p class="mx-[1rem]">Services</p>
-                    <p class="mx-[1rem]">Contact</p>
+                <nav class="hidden sm:flex sm:flex-row sm:mr-[15rem]">
+                    <p class="sm:mx-[1rem]">Home</p>
+                    <p class="sm:mx-[1rem]">portafolio</p>
+                    <p class="sm:mx-[1rem]">Services</p>
+                    <p class="sm:mx-[1rem]">Contact</p>
                 </nav>
+                <figure class="sm:hidden">
+                    <img src="./assets/hamburguesa.svg" alt="Menu comprimido">
+                </figure>
             </header>
-            <div class="flex">
-                <div class="w-[50%]">
+            <div class="flex flex-col p-[1rem] sm:flex sm:flex-row  ">
+                <div class="w-fullorder-second   sm:w-[50%] sm:order-first">
                     <div class="pt-[5%] pb-[5%] pr-[10%] h-full ">
-                        <p class="font-bold text-1xl py-[1rem]">WELCOME</p>
-                        <p class="text-5xl py-[1rem]">Loren ipsum dolor sit amet consectetur</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem suscipit inventore
+                        <p class="font-bold text-base  py-[0.1rem] sm:text-xl sm:py-[1rem]">WELCOME</p>
+                        <p class=" text-base font-bold  sm:text-5xl py-[1rem]">Loren ipsum dolor sit amet consectetur</p>
+                        <p class="text-xs sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem suscipit inventore
                             repellendus delectus modi magni cumque esse consequatur veritatis ratione. Magni non, eum
                             perferendis facere ratione optio quidem et commodi.</p>
                         <button class="bg-white text-black py-[0.4rem] rounded-md my-[1rem] w-[8rem]">Explore</button>
                     </div>
 
                 </div>
-                <figure class="w-[50%]">
+                <figure class="w-full order-first sm:w-[50%] sm:order-second">
                     <img src="./assets/brainstore.svg" alt="LLuvia de ideas">
 
                 </figure>
@@ -46,19 +49,19 @@
             </div>
         </section>
 
-        <section id="contenedor2" class=" flex flex-col items-center my-[3rem] mx-[10rem]">
+        <section id="contenedor2" class="flex flex-col items-center my-[1.5rem] mx-[6%] sm:my-[3rem] sm:mx-[10rem]">
 
-            <div id="textocontenedor2" class="text-center mb-[2rem] w-[40%]">
+            <div id="textocontenedor2" class="text-center sm:mb-[2rem] sm:w-[40%]">
                 <p class="text-[#74C69D] font-bold text-lg pb-[0.5rem]">PARTNERS</p>
-                <p class="font-bold text-4xl p-[0.5rem]">Lorem ipsum dolor</p>
-                <p class="text-center p-[0.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="font-bold text-xl sm:text-4xl sm:p-[0.5rem]">Lorem ipsum dolor</p>
+                <p class="text-center text-xl p-[0.5rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
             </div>
 
-            <figure id="figurascontenedor2" class=" flex justify-between w-full mb-[2rem]">
-                <img src="./assets/1_google.svg" alt="logo google">
-                <img src="./assets/2_microsoft.svg" alt="logo Microsoft">
-                <img src="./assets/3_airbnb.svg" alt="logo Airbnb">
-                <img src="./assets/4_facebook.svg" alt="logo Facebook">
+            <figure id="figurascontenedor2" class=" flex flex-col m-[20%] sm:flex justify-between sm:w-full sm:mb-[2rem]">
+                <img src="./assets/1_google.svg" alt="logo google" class="py-[5%]">
+                <img src="./assets/2_microsoft.svg" alt="logo Microsoft" class="py-[5%]">
+                <img src="./assets/3_airbnb.svg" alt="logo Airbnb" class="py-[5%]">
+                <img src="./assets/4_facebook.svg" alt="logo Facebook" class="py-[5%]">
 
             </figure>
             <button class="bg-[#212529] text-white py-[0.4rem] rounded-md my-[1rem] w-[8rem] justify-center">Learn
@@ -66,11 +69,11 @@
 
         </section>
 
-        <section id="contenedor3" class="mx-[10rem] flex flex-row text-start my-[3rem]">
-            <figure class="w-[50%]">
+        <section id="contenedor3" class="flex flex-col p-[5%]sm:mx-[10rem] sm:flex sm:flex-row text-start sm:my-[3rem]">
+            <figure class=" w-full p-[4%] sm:w-[50%]">
                 <img src="./assets/chating.svg" alt="Personas hablando">
             </figure>
-            <div class="flex-col w-[50%] my-[5%] ml-[7.5%]">
+            <div class="flex-col w-full p-[4%] sm:w-[50%] sm:my-[5%] sm:ml-[7.5%]">
                 <p class="font-bold text-4xl pb-[1rem]">Loren ipsum dolor sit amet consectetur</p>
                 <p class="pb-[1rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad harum natus veniam, recusandae in,
                     voluptatum soluta eius exercitationem cum iure eum fugiat perferendis? Magni explicabo consequatur
@@ -79,52 +82,57 @@
             </div>
         </section>
 
-        <section id="contenedor4" class="mx-[10rem] flex flex-row my-[3rem]">
-            <div class="w-[50%] my-[4rem] mr-[4rem]"    >
+        <section id="contenedor4" class=" w-full flex flex-col py-[10%] px-[5%] sm:mx-[10rem] sm:flex sm:flex-row sm:my-[3rem]">
+            <div class="order-second sm:w-[50%] sm:my-[4rem] sm:mr-[4rem]"    >
                 <p class="font-bold text-4xl pb-[1rem]">Loren ipsum dolor sit amet consectetur</p>
                 <p class="pb-[1rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad harum natus veniam, recusandae in,
                     voluptatum soluta eius exercitationem cum iure eum fugiat perferendis? Magni explicabo consequatur
                     aliquid, ipsa laudantium similique!</p>
-                <button class="bg-[#212529]  text-white w-[8rem] py-[0.4rem] rounded-md">Learn More</button>
+                <button class="order-third bg-[#212529]  text-white w-[8rem] py-[0.4rem] rounded-md">Learn More</button>
             </div>
-            <figure class="w-[50%]">
+            <figure class="order-first mb-[1rem] sm:w-[50%] ">
                 <img src="./assets/estudiando.svg" alt="Persona Estudiando">
             </figure>            
         </section>
 
-        <section id="contenedor5" class="mx-[10rem]  my-[3rem] flex flex-col items-center">
-            <div class="text-center">
-                <p>Team</p>
-                <p>Our Talents</p>
-                <p>orem ipsum dolor, sit amet consectetur adipisicing elit. Ad harum natus veniam</p>             
+        <section id="contenedor5" class="flex-col text-center sm:mx-[10rem]  sm:my-[3rem] sm:flex sm:flex-col sm:items-center">
+            <div class="w-full text-center sm:w-[30%]">
+                <p class="text-[#74C69D] font-bold pb-[1rem] ">TEAM</p>
+                <p class="text-[#212529] font-bold text-2xl pb-[1rem]">Our Talents</p>
+                <p class="pb-[1rem]">orem ipsum dolor, sit amet consectetur adipisicing elit. Ad harum natus veniam</p>             
 
             </div>
-            <figure class="flex flex-row ">
-                <figure class="px-[2rem] py-[1rem]"> 
-                    <img src="./assets/foto1.svg" alt="Peg Legge">
-                    <figcaption>Peg Legge</figcaption>
-                    <figcaption>CEO</figcaption>
+            <figure class="flex-col sm:flex sm:flex-row ">
+                <figure class="px-[2rem] py-[1rem] shadow-md shadow-black mx-[1rem] "> 
+                    <img src="./assets/foto1.svg" alt="Peg Legge" >
+                    <figcaption class="font-bold p-[0.5rem]" >Peg Legge</figcaption>
+                    <figcaption class="p-[0.5rem] text-sm text-slate-500">CEO</figcaption>
                 </figure>
-                <figure class="px-[2rem] py-[1rem]"> 
-                    <img src="./assets/foto1.svg" alt="Peg Legge">
-                    <figcaption>Peg Legge</figcaption>
-                    <figcaption>CEO</figcaption>
+                <figure class="px-[2rem] py-[1rem] shadow-md shadow-black mx-[1rem]"> 
+                    <img src="./assets/foto2.svg" alt="Peg Legge" >
+                    <figcaption class="font-bold p-[0.5rem]" >Richard Guerra</figcaption>
+                    <figcaption class="p-[0.5rem] text-sm text-slate-500">CTO</figcaption>
                 </figure>
-                <figure class="px-[2rem] py-[1rem]"> 
-                    <img src="./assets/foto1.svg" alt="Peg Legge">
-                    <figcaption>Peg Legge</figcaption>
-                    <figcaption>CEO</figcaption>
+                <figure class="px-[2rem] py-[1rem] shadow-md shadow-black mx-[1rem]"> 
+                    <img src="./assets/foto3.svg" alt="Peg Legge" >
+                    <figcaption class="font-bold p-[0.5rem]" >Alexandra Stolz</figcaption>
+                    <figcaption class="p-[0.5rem] text-sm text-slate-500">DESIGNER</figcaption>
                 </figure>
-                <figure class="px-[2rem] py-[1rem]"> 
-                    <img src="./assets/foto1.svg" alt="Peg Legge">
-                    <figcaption>Peg Legge</figcaption>
-                    <figcaption>CEO</figcaption>
+                <figure class="px-[2rem] py-[1rem] shadow-md shadow-black mx-[1rem]"> 
+                    <img src="./assets/foto4.svg" alt="Peg Legge" >
+                    <figcaption class="font-bold p-[0.5rem]" >Janet Bray</figcaption>
+                    <figcaption class="p-[0.5rem] text-sm text-slate-500">DEVELOPER</figcaption>
                 </figure>
-
-
             </figure>
-            <button></button>
+            <button class="bg-[#212529] text-white w-[8rem] py-[0.4rem] rounded-md mt-[2rem]">View Team</button>
         </section>
+
+        <footer class="bg-[#74C69D] sm:mt-[3rem] w-full">
+            <figure class="sm:p-[2rem]">
+                <img src="./assets/footer1.svg" alt="Pie de pagina">
+            </figure>
+
+        </footer>
 
     </main>
 
