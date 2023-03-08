@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contactenos</title>
+</head>
+<body>
+    <!-- cabecera -->
+    <header class="bg-[#74C69D] text-white">
+        <div class="p-[1rem] flex flex-row justify-between sm:px[4rem]">
+            <div class="flex flex-row items-center">
+                <figure >
+                    <img src="./assets_contatenos/logo.svg" alt="" class="mr-[0.5rem]">
+                </figure>
+                <p class="font-bold text-2xl">Start</p>
+            </div>
+            <figure class="sm:hidden">
+                <img src="./assets_contatenos/hamburguesa.svg" alt="">
+            </figure>
+            <!-- Barra de navegacion -->
+            <nav class="hidden sm:flex sm:flex-row sm:justify-around sm:px-[4rem]">
+                <p class="sm:mx-[0.5rem]">Home</p>
+                <p class="sm:mx-[0.5rem]">Portafolio</p>
+                <p class="sm:mx-[0.5rem]">Services</p>
+                <p class="sm:mx-[0.5rem]">Contact</p>
+            </nav>
+        </div>
+    </header>
+    <!-- Contenido -->
+    <main>
+        <!-- Texto inicial -->
+        <section class="mx-[0.5rem] my-[1.5rem] text-center">
+            <p class="font-bold mb-[1rem]">Contact Us</p>
+            <p class="mb-[0.3rem]">Lorem ipsum, dolor sit amet consectetur</p>
+            <p>adipisicing elit.</p>
+        </section>
+        <!-- Formulario -->
+        <form action="" >
+            <figure class="mb-[0.5rem] px-[0.5rem]">
+                <img src="./assets_contatenos/ubicacion.svg" alt="">
+            </figure>
+            <!-- nombre -->
+            <label for="nombre" class="px-[0.5rem]">
+                <span>Name</span>
+                <input type="text" id="nombre" name="nombre" class=" my-[1rem] py-[0.5rem] mx-[0.5rem] border-solid border-2 border-black rounded">
+            </label>
+            <!-- Email -->
+            <label for="email" class="px-[0.5rem]">
+                <span>Email</span>
+                <input type="email" id="email" name="email" class=" my-[1rem] py-[0.5rem] mx-[0.5rem] border-solid border-2 border-black rounded">
+            </label>
+            <!-- Message -->
+            <label for="message" class="px-[0.5rem]">
+                <span>Message</span>
+                <input type="text" id="message" name="message" class=" my-[1rem] py-[3rem] mx-[0.5rem] border-solid border-2 border-black rounded" >
+            </label>
+            <!-- Submit button -->
+            <div class="flex flex-row justify-center mt-[1rem] mb-[3rem]">
+                <input type="submit" value="Submit" class="py-[1rem] w-[8rem] bg-[#212529] text-white rounded" >
+            </div>        
+
+        </form>
+    </main>
+    <footer class="bg-[#74C69D]">
+        <figure class="my-[1rem] flex flex-col items-center">
+            <img src="./assets_contatenos/redes.svg" alt="" class="p-[1rem]">
+            <img src="./assets_contatenos/derechos-reservados.svg" alt="" class="p-[1rem]"> 
+        </figure>
+
+    </footer>
+    
+</body>
+</html>
