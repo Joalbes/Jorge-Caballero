@@ -8,7 +8,7 @@ btnbuscar.addEventListener('click', buscar)
 
 
 async function buscar() {
-    const valorEntrada = document.querySelector('#pokemon').value;
+    const valorEntrada = document.querySelector('#entrada').value;
     const response = await fetch(url + valorEntrada);
     console.log(response);
     const dato = await response.json();
