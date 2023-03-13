@@ -34,16 +34,16 @@
             
             <div class="flex flex-col p-[1rem]">
                 <!-- Entrada datos            -->
-                <form action="">
+                <form action="" >
                     <label for="entrada_letra" class="flex flex-col p-[1rem]">
                         <scan>Ingrese una letra:</scan>
-                        <input type="text" id="entrada_letra" name="entrada" class="rounded">
+                        <input type="text" id="entrada_letra" name="entrada" minlength="1" maxlength="1" class="rounded">
                     </label>
                 </form>                
                 <!-- Historico de letras usadas -->
-                <div class="p-[1rem]">
+                <div class="p-[1rem] ">
                     <p>Historico:</p>
-                    <div id="contedor-historico" class="w-fll h-auto bg-lime-100 border-solid border-2 border-black">                                            
+                    <div id="contedor-historico" class="w-fll h-auto bg-lime-100 border-solid border-2 border-black flex flex-row">                                            
                     </div>
                 </div>
             </div>
