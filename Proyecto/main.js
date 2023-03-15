@@ -18,7 +18,6 @@ let palabraVector = [];
 
 /******************************************** OBTENIENDO VALORES ***********************************************/
 const entradaLetras = document.querySelector('#entrada_letra').value;
-
 /******************************************* ADICIONANDO EVENTOS ***********************************************/
 btnBuscarPalabra.addEventListener('click', fBuscarPalabra);
 btnJuagar.addEventListener('click', fEnter);
