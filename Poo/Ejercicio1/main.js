@@ -22,6 +22,16 @@ class Persona {
         this.edad = 2023 - parseFloat(fecha.slice(0,4));
         return this.edad;
     }
+
+    nombreCompleto(){
+        let nombreCompleto = `${this.nombres} ${this.apellidos}`
+    }
+
+    birthday(fecha){
+        let cumple = (
+            if()
+        )
+    }
 }
 
 //*************Creacion del vector ***************//
@@ -30,22 +40,29 @@ class Persona {
 //variables
 let vectorDatos = [];
 
-//Referencia a vistas
+//Referencia a vistas en html
 const cedulaP = document.querySelector("#cedula");
 const nombreP = document.querySelector("#nombre");
 const apellidosP = document.querySelector("#apellidos");
 const fechaNacimientoP = document.querySelector("#fecha");
-const btnSubmit = document.querySelector('#submit');
+const btn = document.querySelector('#btn');
+const formulario = document.querySelector("#formulario");
 
 //Eventos
-btnSubmit.addEventListener('click',imprimir);
+btn.addEventListener('click',imprimir);
+formulario.addEventListener("submit",form)
 
 //Funciones
 function imprimir() { 
     //crecion de Objetos
-    const usuario = new Persona(cedulaP.value,nombreP.value, apellidosP.value, fechaNacimientoP.value);
-    let edadActual = usuario.cacularEdad(fechaNacimientoP.value);
-    usuario.edad = edadActual;
+    const usuario = new Persona(cedulaP.value,nombreP.value, apellidosP.value, fechaNacimientoP.value);    
+    usuario.edad = usuario.cacularEdad(fechaNacimientoP.value);;
     vectorDatos.push(usuario);
-    console.log(vectorDatos);       
+    console.log(vectorDatos);  
 }
+
+function form(e){
+e.preventDefault();
+}
+
+
