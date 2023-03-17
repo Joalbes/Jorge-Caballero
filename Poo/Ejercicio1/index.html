@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Formulario Poo</title>
 </head>
+
 <body class="bg-stone-800">
-    <main class="flex flex-row justify-center items-center ">
+    <main class="flex flex-row justify-around ">
 
         <!-- formulario -->
-        <section class="bg-stone-200 mt-[8rem] ">
-        <form action="" id="formulario" class="flex flex-col  items-center bg-stone-400 " >
+        <form action="" id="formulario" class="flex flex-col  items-center bg-stone-400 mt-[8rem] rounded-md">
 
             <!-- nombre -->
             <label for="nombre" class="p-[2rem]">
@@ -38,12 +39,37 @@
                 <input type="Text" id="cedula" name="cedula" required>
             </label>
 
-            <button id="btn" class="px-[2rem] py-[0.5rem] mb-[2rem] rounded bg-green-600 ">Enviar</button>           
+            <button id="btn" class="px-[2rem] py-[0.5rem] mb-[2rem] rounded bg-green-600 ">Enviar</button>
 
-</form>
-    </section>
+        </form>
+
+
+        <section class="bg-amber-300 border-solid border-2 border-black  w-[30%] h-auto mt-[8rem] rounded-md">
+            <div class="flex flex-row justify-between w-full ">
+                <div id="nombreslistas" class="bg-stone-300 border-solid border-2 border-black text-center w-[50%]">
+                    <p class="border-solid border-2 border-black bg-amber-300">Nombre</p>
+                </div>
+                <div id="cumplelistas" class="bg-stone-300 border-solid border-2 border-black text-center  w-[50%]">
+                    <p class="border-solid border-2 border-black bg-amber-300">¿Cumple años?</p>
+                </div>
+            </div>
+            <div id="cajadatos" class=" border-solid border-2 border-black flex flex-col">
+
+            </div>
+
+        </section>
+
+        <section class="flex flex-row w-[20%] mt-[8rem] h-[10%] rounded-md">
+            <input list="cedulas" id="inputcedula" class="rounded-md p-[0.5rem]">
+            <datalist id="cedulas">
+            </datalist>
+            <button id="btnlupa"
+                class="ml-[0.5rem] px-[1rem] border-solid border-1 bg-green-600 rounded-md">Buscar</button>
+            <!-- colocar caja que contiene mensaje de no esta -->
+        </section>
     </main>
-    
+
 </body>
 <script src="./main.js"></script>
+
 </html>
