@@ -51,6 +51,9 @@ class Persona {
 //************************************************//
 
 //variables
+let fechaActual;
+let esDia = false;
+let diasFaltantes;
 let vectorDatos = [];
 let vectorCedulas = [];
 //variables bandera
@@ -80,12 +83,17 @@ btnlupa.addEventListener('click', buscarCedula);
 function imprimir() {
     //crecion de Objetos
     const usuario = new Persona(cedulaP.value, nombreP.value, apellidosP.value, fechaNacimientoP.value);
-    usuario.edad = usuario.cacularEdad(fechaNacimientoP.value);
+    usuario.edad = usuario.cacularEdad(fechaNacimientoP.value);    
     vectorDatos.push(usuario);
     vectorCedulas.push(usuario.cedula);
     //datos tabla
     nombreslistas.innerHTML += `<p id="nombrelista" >${usuario.nombreCompleto()}</p>`
     cumplelistas.innerHTML += `<p id="cumplelistas" >${usuario.birthday(fechaNacimientoP.value)}</p>`
+    if (usuario.birthday(fechaNacimientoP.value) == 'Si') {
+        esDia = true;
+    }else{
+        esDia = false;
+    }
 }
 
 
@@ -107,14 +115,18 @@ function buscarCedula(){
         }        
     });
 
-    console.log(`cedula está?: ${cedulaEsta}`);
+    //calcular fechas:
+    fechaActual = 
+
+    localStorage.setItem("nombreCompleto",`${nombreP.value} ${apellidosP.value}`);
+    localStorage.setItem("Fecha Cumpleaños",`Día:${fechaNacimientoP.value.slice(8, 10)} Mes:${(fechaNacimientoP.value).slice(5, 7)} fecha: ${fechaNacimientoP.value} `);
+    localStorage.setItem("Cumple Años",esDia);
 
     if (cedulaEsta == 0) {
         informacumple.innerHTML=`<p class="text-center text-2xl font-bold text-orange-600  p-[1rem]">Cédula no exite</p>`;   
     }else{
-        informacumple.innerHTML=`<p class="text-center text-2xl font-bold text-orange-600  p-[1rem]">Cédula si exite</p>`; 
-        cedulaEsta = 0;
-    }
-    
+        cedulaEsta = 0;        
+        location.href = 'index2.html'
+    }    
 }
 
