@@ -53,6 +53,8 @@ class Persona {
 //variables
 let vectorDatos = [];
 let vectorCedulas = [];
+//variables bandera
+let cedulaEsta = 0;
 
 //Referencia a vistas en html
 const cedulaP = document.querySelector("#cedula");
@@ -65,7 +67,8 @@ const formulario = document.querySelector("#formulario");
 const nombreslistas = document.querySelector("#nombreslistas");
 const cumplelistas = document.querySelector("#cumplelistas");
 const listaCedulas = document.querySelector("#cedulas");
-const inputCedula = document.querySelector("#inputcedula")
+const inputCedula = document.querySelector("#inputcedula");
+const informacumple = document.querySelector("#informacumple");
 
 
 //Eventos
@@ -81,10 +84,8 @@ function imprimir() {
     vectorDatos.push(usuario);
     vectorCedulas.push(usuario.cedula);
     //datos tabla
-    console.log(usuario.nombreCompleto());
-    console.log(usuario.birthday(fechaNacimientoP.value));
-    nombreslistas.innerHTML += `<p id="nombrelista text-center">${usuario.nombreCompleto()}</p>`
-    cumplelistas.innerHTML += `<p id="cumplelistas text-center">${usuario.birthday(fechaNacimientoP.value)}</p>`
+    nombreslistas.innerHTML += `<p id="nombrelista" >${usuario.nombreCompleto()}</p>`
+    cumplelistas.innerHTML += `<p id="cumplelistas" >${usuario.birthday(fechaNacimientoP.value)}</p>`
 }
 
 
@@ -95,18 +96,25 @@ function form(e) {
 function buscarCedula(){
     vectorCedulas.forEach(element => {        
         listaCedulas.innerHTML += `<option value="${element}"></option>`        
-    });
+    });    
 
     vectorCedulas.forEach(element => {
+        console.log(`input: ${inputCedula.value}`);
+        console.log(`Elemento del array: ${element}`);
         if(inputCedula.value == element){
             console.log('cedula esta');
-
-        }else{
-            
-
-        }
-        
+            cedulaEsta = 1;
+        }        
     });
+
+    console.log(`cedula está?: ${cedulaEsta}`);
+
+    if (cedulaEsta == 0) {
+        informacumple.innerHTML=`<p class="text-center text-2xl font-bold text-orange-600  p-[1rem]">Cédula no exite</p>`;   
+    }else{
+        informacumple.innerHTML=`<p class="text-center text-2xl font-bold text-orange-600  p-[1rem]">Cédula si exite</p>`; 
+        cedulaEsta = 0;
+    }
     
 }
 
