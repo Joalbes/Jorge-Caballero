@@ -1,5 +1,4 @@
-let arrayCarta = []
-let arrayIds = []
+
 //refencia a la vista
 const contenedorCartas = document.getElementById("contenedorCard");
 //const carta = document.getElementsByTagName("id");
@@ -7,6 +6,8 @@ const contenedorCartas = document.getElementById("contenedorCard");
 
 function setLocal(event) {
     localStorage.setItem('id', event.target.id)
+    //location.href = 'index2.html'
+    location.href ='./post.html'
 }
 
 const main = async ()=> {
@@ -20,7 +21,7 @@ const main = async ()=> {
             <div id="${data[i].id}" class=" w-[15rem] bg-orange-400 rounded-lg p-[1rem]">
                 <h1 id="${data[i].id}" class="font-bold text-sm  pb-[1rem]">${data[i].title}</h1>
                 <p id="${data[i].id}" class="text-xs">${data[i].body}</p>
-            </div>`           
+            </div>`      
                 
     } 
 
@@ -29,5 +30,4 @@ const main = async ()=> {
         
     }   
 }
-
 main();
